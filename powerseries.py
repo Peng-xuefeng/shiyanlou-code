@@ -8,4 +8,6 @@ while n <= 100:
     term = term * x / n   #用来计算当前项是多少
     result = result + term
     n = n + 1
+    if term < 0.0001:
+        break
 print("number is {} result is {}".format(n,result))
