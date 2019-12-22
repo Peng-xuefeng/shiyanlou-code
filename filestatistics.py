@@ -16,6 +16,9 @@ def parse_file(path):
     fd.close()
     return (tabs,spaces,i+1)
 def main(path):
+    """
+    这段函数用来调用parse_file
+    """
     if os.path.exists(path):
         tabs,spaces,lines = parse_file(path)
         print("Spaces {}. Tabs {}  lines {}".format(spaces,tabs,lines))
