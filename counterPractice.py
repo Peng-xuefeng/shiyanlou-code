@@ -1,6 +1,8 @@
 #练习Counter的使用
 from collections import Counter
-c = Counter('Programming is the most versjfsf fshfhuie fsweeo')
-t = c.most_common(3)
-print(c)
-print(t)
+c = Counter('ABCCBADDAA')
+k =c.most_common(4)
+lista = []
+for i,j in k:
+    lista.append("{}:{},".format(i,j))
+print(''.join(lista).rstrip(','))
